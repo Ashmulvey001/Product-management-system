@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#121212">
+
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Scanner App"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:background="#1E1E1E">
+
+        <Button
+            android:id="@+id/btnScannedBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Scanned Barcode\n123456789"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#333333"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="12dp"
+        android:background="#1E1E1E">
+
+        <TextView
+            android:id="@+id/tvScannedId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanned ID: 123456789"
+            android:textColor="#CCCCCC"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tvProductInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code: Sample Product A\nFile: TR11122\nDatabase: Main DB\nStatus: Validated - Product in Database"
+            android:textColor="#00FF66"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
